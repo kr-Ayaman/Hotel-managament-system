@@ -1,0 +1,98 @@
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #6B8A94;
+  opacity: 94%;
+  position: fixed; /* Makes it fixed at the top */
+  top: 0; /* Positions it at the very top of the viewport */
+  left: 0; /* Ensures it spans the full width */
+  width: 100%; /* Ensures it takes up the full width */
+  z-index: 1000;
+}
+.book-now {
+  background-color: #DFF7F6;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.book-now:hover {
+  background-color: #BDE6E5;
+}
+.user-icon{
+  display: flex;
+  gap: 3rem;
+  padding-right: 2.5rem;
+}
+.main-navigation__title a {
+  text-decoration: none;
+  color: rgb(40, 2, 2);
+}
+.user-icon img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.main-header .auth {
+  color: rgb(0, 94, 126) !important;
+}
+.main-header .auth{
+  text-decoration: none;
+  color: white;
+  background-color: #d1d629;
+  border: 2px solid black;
+  padding: 6px;
+  color: #19101c;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.main-header .auth:hover{
+  background-color: #bbc123;
+  transform: scale(1.05);
+}
+
+
+.main-navigation__menu-btn span {
+  display: block;
+  width: 3rem;
+  height: 2.5px;
+  background: white;
+}
+.main-navigation__header-nav {
+  display: none;
+}
+
+.main-navigation__drawer-nav {
+  height: 100%;
+}
+.main-navigation__drawer-nav ul{
+  display: flex;
+  flex-direction: column;
+  display: block;
+}
+
+.main-header .logout{
+  padding: 5px;
+  background-color: #ffe206;
+  color: rgb(145, 115, 234);
+  font-size: medium;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .main-navigation__menu-btn {
+    display: none;
+  }
+
+  .main-navigation__header-nav {
+    display: block;
+  }
+}

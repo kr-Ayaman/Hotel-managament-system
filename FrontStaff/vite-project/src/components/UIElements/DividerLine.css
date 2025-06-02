@@ -1,0 +1,8 @@
+.divider-line {
+    width: 30%;  
+    margin: 10px auto;
+    height: 2px;        /* Adjust thickness as needed */
+    background-color: #b1e80f; /* Set color to match your design */
+    opacity: 0.5;       /* Adjust opacity if you want a lighter effect */
+  }
+  

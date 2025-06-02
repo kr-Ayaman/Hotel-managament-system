@@ -1,0 +1,13 @@
+.centered-text {
+    color: #b4d63b; /* Use the color from the image */
+    font-size: 48px; /* Adjust based on your design */
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Arial', sans-serif; /* Adjust font-family as needed */
+    
+    /* Center the text horizontally and vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

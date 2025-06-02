@@ -1,0 +1,95 @@
+import React, { useState } from 'react';
+import { useContext } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { AuthContext } from '../../context/auth-context';
+import NavLinks from './NavLinks';
+import { useHistory } from 'react-router-dom';
+import SideDrawer from './SideDrawer';
+import Backdrop from '../UIElements/Backdrop';
+import './MainNavigation.css';
+
+const MainNavigation = props => {
+  const auth = useContext(AuthContext);
+  const [drawerIsOpen, setDrawerIsOpen] = useState(false);
+  const history = useHistory();
+  const location = useLocation(); // Get the current path
+  
+  const openDrawerHandler = () => {
+    setDrawerIsOpen(true);
+  };
+
+  const closeDrawerHandler = () => {
+    setDrawerIsOpen(false);
+  };
+
+  const handleBookNowClick = () => {
+    console.log("Checking login status:", auth.isLoggedIn);
+    if (auth.isLoggedIn) {
+      history.push('/booking');
+    } else {
+      history.push('/auth');
+    }
+  };
+
+  const handleLogout = () => {
+    auth.logout();
+    history.push('/auth');
+  };
+
+  return (
+    <React.Fragment>
+      {drawerIsOpen && <Backdrop onClick={closeDrawerHandler} />}
+      <SideDrawer show={drawerIsOpen} onClick={closeDrawerHandler}>
+        <nav className="main-navigation__drawer-nav">
+          <NavLinks />
+        </nav>
+      </SideDrawer>
+
+      <header className="main-header">
+        <button
+          className="main-navigation__menu-btn"
+          onClick={openDrawerHandler}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
+        <h1 className="main-navigation__title">
+          <Link to="/">XYZ Hotel</Link>
+        </h1>
+        <nav className="main-navigation__header-nav">
+          <NavLinks />
+        </nav>
+        <div className="user-icon">
+          <button className="book-now" onClick={handleBookNowClick}>Book Now</button>
+          {auth.isLoggedIn && location.pathname === `/guest/${auth.guestId}` ? (
+            <button className="logout" onClick={handleLogout}>
+              Logout
+            </button>
+          ) : auth.isLoggedIn ? (
+            <Link to={`/guest/${auth.guestId}`}>
+              <svg
+                width="77"
+                height="40"
+                viewBox="0 0 77 69"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M18.7461 49.1625C21.4324 47.2938 24.4346 45.8203 27.7529 44.7422C31.0712 43.6641 34.5475 43.125 38.1818 43.125C41.8161 43.125 45.2924 43.6641 48.6107 44.7422C51.929 45.8203 54.9312 47.2938 57.6175 49.1625C59.4609 47.1979 60.8962 44.9698 61.9233 42.4781C62.9504 39.9865 63.4639 37.3271 63.4639 34.5C63.4639 28.1271 61.0016 22.7005 56.0768 18.2203C51.1521 13.7401 45.1871 11.5 38.1818 11.5C31.1765 11.5 25.2115 13.7401 20.2868 18.2203C15.362 22.7005 12.8996 28.1271 12.8996 34.5C12.8996 37.3271 13.4132 39.9865 14.4403 42.4781C15.4674 44.9698 16.9026 47.1979 18.7461 49.1625ZM38.1818 37.375C35.0742 37.375 32.4538 36.4047 30.3206 34.4641C28.1874 32.5234 27.1209 30.1396 27.1209 27.3125C27.1209 24.4854 28.1874 22.1016 30.3206 20.1609C32.4538 18.2203 35.0742 17.25 38.1818 17.25C41.2894 17.25 43.9098 18.2203 46.043 20.1609C48.1761 22.1016 49.2427 24.4854 49.2427 27.3125C49.2427 30.1396 48.1761 32.5234 46.043 34.4641C43.9098 36.4047 41.2894 37.375 38.1818 37.375ZM38.1818 63.25C33.8101 63.25 29.7017 62.4953 25.8567 60.9859C22.0117 59.4766 18.6671 57.4281 15.8229 54.8406C12.9786 52.2531 10.727 49.2104 9.06781 45.7125C7.40867 42.2146 6.5791 38.4771 6.5791 34.5C6.5791 30.5229 7.40867 26.7854 9.06781 23.2875C10.727 19.7896 12.9786 16.7469 15.8229 14.1594C18.6671 11.5719 22.0117 9.52344 25.8567 8.01406C29.7017 6.50469 33.8101 5.75 38.1818 5.75C42.5535 5.75 46.6618 6.50469 50.5068 8.01406C54.3518 9.52344 57.6965 11.5719 60.5407 14.1594C63.3849 16.7469 65.6366 19.7896 67.2958 23.2875C68.9549 26.7854 69.7845 30.5229 69.7845 34.5C69.7845 38.4771 68.9549 42.2146 67.2958 45.7125C65.6366 49.2104 63.3849 52.2531 60.5407 54.8406C57.6965 57.4281 54.3518 59.4766 50.5068 60.9859C46.6618 62.4953 42.5535 63.25 38.1818 63.25Z"
+                  fill="#FEF7FF"
+                />
+              </svg>
+            </Link>
+          ) : (
+            <Link className="auth" to="/auth">
+              Authenticate
+            </Link>
+          )}
+        </div>
+      </header>
+    </React.Fragment>
+  );
+};
+
+export default MainNavigation;

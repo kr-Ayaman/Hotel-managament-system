@@ -1,0 +1,23 @@
+.profile-page {
+    margin: 4.5rem auto;
+    max-width: 1200px;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .profile-page h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #033633;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
+  
+  .staff-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  

@@ -1,0 +1,139 @@
+/* Namespace everything under .restaurant-orders */
+.restaurant-orders-container {
+    max-width: 1200px;
+    margin: 3.5rem auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  .restaurant-orders-container h2,
+  .restaurant-orders-container h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  
+  /* Filter Section */
+  .restaurant-orders-filters {
+    display: flex;
+    gap: 15px;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .restaurant-orders-filters input {
+    padding: 8px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 150px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .restaurant-orders-filters input:focus {
+    border-color: #007bff;
+  }
+  
+  /* Table Styles */
+  .restaurant-orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+  }
+  
+  .restaurant-orders-table thead {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .restaurant-orders-table thead th {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .restaurant-orders-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .restaurant-orders-table tbody td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .restaurant-orders-table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .restaurant-orders-table td,
+  .restaurant-orders-table th {
+    text-align: center;
+  }
+  
+  .restaurant-orders-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .restaurant-orders-button:hover {
+    background-color: #218838;
+  }
+  
+  .restaurant-orders-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Error Message */
+  .restaurant-orders-error {
+    text-align: center;
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  /* Loading Spinner */
+  .restaurant-orders-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .restaurant-orders-filters {
+      flex-wrap: wrap;
+    }
+  
+    .restaurant-orders-filters input {
+      width: calc(50% - 10px);
+      margin-bottom: 10px;
+    }
+  
+    .restaurant-orders-filters input:last-child {
+      width: 100%;
+    }
+  
+    .restaurant-orders-table {
+      font-size: 12px;
+    }
+  
+    .restaurant-orders-table td,
+    .restaurant-orders-table th {
+      padding: 8px;
+    }
+  
+    .restaurant-orders-button {
+      padding: 6px 10px;
+      font-size: 12px;
+    }
+  }
+  

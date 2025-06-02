@@ -1,0 +1,40 @@
+.guest-search-table {
+  max-width: 90%;
+  margin: 0 auto;
+}
+.guest-search-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.guest-search-table td {
+  border: 1px solid #ddd;
+  padding: 2px 8px;
+  text-align: center;
+}
+
+.guest-search-table th {
+  border: 1px solid #ddd;
+  padding: 10px 8px;
+  text-align: center;
+  background-color: #0099cc;
+  color: white;
+}
+
+.guest-search-table input {
+  width: 80%;
+  margin-top: 5px;
+}
+
+.guest-search-table button {
+  background-color: #fca800;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 200;
+  color: #000000;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  margin: 0 auto;
+}

@@ -1,0 +1,35 @@
+.profile-container {
+    background-color: #f0f0f0;
+    padding: 2rem;
+    padding-top: 4.5rem;
+    border-radius: 8px;
+  }
+  
+  .profile-header {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .profile-header h2 {
+    margin: 0;
+  }
+  
+  .profile-details p {
+    margin: 5px 0;
+    color: white !important;
+    font-size: 1rem;
+  }
+  
+  .booking-section {
+    margin-top: 20px;
+  }
+  
+  .booking-section h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  

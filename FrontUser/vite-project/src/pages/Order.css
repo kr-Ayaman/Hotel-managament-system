@@ -1,0 +1,144 @@
+.Order{
+    padding-top: 5rem;
+    background-color: #eff9da;
+}
+/* Order.css */
+
+/* Global Styles */
+.Order body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #f2f4f7, #dfe9f3); /* Subtle gradient background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .Order h1 {
+    width: fit-content;
+    background-color: #007BFF;
+    margin:1.5rem auto;
+    color: #ddd;
+    padding: 20px;
+    border-radius: 40px;
+    color: #f6cfcf;
+    font-size: 2rem;
+  }
+  
+  /* Filter Row */
+  .Order .filters-row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Order .filters-row input,
+  .Order .filters-row select {
+      padding: 0.75rem;
+      width: 20vw;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .Order .filters-row input:focus,
+  .Order .filters-row select:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+  }
+  
+  .Order .filters-row input::placeholder,
+  .Order .filters-row select {
+    color: #888;
+  }
+  
+  /* Table Styling */
+  .Order table {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Order table th, .Order table td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .Order table th {
+    background-color: #007BFF;
+    color: white;
+    font-weight: 600;
+  }
+  
+  .Order table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .Order table td {
+    font-size: 1rem;
+  }
+  
+  .Order input[type="number"] {
+    width: 120px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .Order input[type="number"]:focus {
+    border-color: #007BFF;
+    outline: none;
+  }
+  
+  /* Button Styling */
+  .Order button {
+    width: fit-content;    
+    padding: 1rem;
+    margin: 2rem 10rem;
+    font-size: 1.2rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .Order button:hover {
+    background-color: #218838;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Order button:active {
+    background-color: #1e7e34;
+  }
+  
+  .submittted{
+    text-align: center;
+    font-size: larger;
+    font-weight: 600;
+    margin-top: 1.5rem;
+  }
+  @media (max-width: 768px) {
+    .Order .filters-row {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .Order .filters-row input,
+    .Order .filters-row select {
+      min-width: 100%;
+    }
+  }
+  

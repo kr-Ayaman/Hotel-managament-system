@@ -1,0 +1,129 @@
+.MenuItems {
+    margin: 4.5rem auto !important;
+  }
+  
+  .MenuItems .Orders h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+  }
+  .MenuItems .filters-row {
+    display: flex;
+    gap: 100px;
+    margin-bottom: 20px;
+    justify-content: center;
+    width: 50vw;
+    margin: auto;
+  }
+  .MenuItems table td {
+    text-align: center !important;
+  }
+  .MenuItems .filters-row input,
+  .MenuItems .filters-row select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .MenuItems table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .MenuItems table th,
+  .MenuItems table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .MenuItems table th {
+    background-color: #2c3e50;
+    color: white;
+  }
+  .MenuItems .price-input{
+    width: 4.5rem;
+  }
+  .MenuItems .add-item-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .MenuItems .add-item-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  .MenuItems .add-item-form-container {
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    max-height: 0;
+  }
+  
+  .MenuItems .add-item-form-container.open {
+    max-height: 300px;
+  }
+  
+  .MenuItems .add-item-form {
+    margin-top: 20px;
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+  }
+  .MenuItems table th:nth-child(2), table td:nth-child(2) {
+    width: 190px;
+  }
+  .MenuItems .price-input {
+    width: 60%;
+    padding: 5px;
+  }
+  .MenuItems button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+ .MenuItems button:hover {
+    background-color: #0056b3;
+  }
+  .MenuItems .add-item-form input,
+  .MenuItems .add-item-form select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .MenuItems .price-change{
+    margin-right: 1rem;
+  }
+
+  .MenuItems .add-item-form button{
+    background-color: #27ae60;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0;
+    transition: all 0.3s ease;
+  }
+  .MenuItems .add-item-form button:disabled {
+    background-color: #a6d1b8;
+    cursor: not-allowed;
+  }
+  .MenuItems .add-item-form button:enabled button:hover  {
+      background-color: #229954;
+      cursor: pointer;
+    }
+
+  

@@ -1,0 +1,64 @@
+.invoice-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin: 3rem;
+  }
+
+  .booking-details{
+    padding: 20px;
+    background-color: #e5cdf0;
+    border-radius: 20px;
+    width: 70vw;
+    border: 2px solid rgb(236, 153, 221);
+    margin: auto;
+  }
+
+  .invoice-heading {
+    color: #1e90ff;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .section {
+    margin-bottom: 30px;
+  }
+  
+  .section-heading {
+    color: #1e90ff;
+    margin-bottom: 15px;
+  }
+  
+  .grid-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .grid-table th,
+  .grid-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  .order-head{
+    margin: 20px;
+  }
+  .grid-table th {
+    background-color: #1e90ff;
+    color: white;
+  }
+  .highlight-total {
+    font-weight: bold;
+    background-color: #f8f9fa; 
+    color: #212529;  
+    border-top: 2px solid #dee2e6;
+  }
+
+  .order-head{
+    background-color: #c2b101;
+    width: fit-content;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 20px;
+  }
+    

@@ -1,0 +1,52 @@
+
+.booking-form-container {
+  max-width: 600px;
+  margin: 7rem auto;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.booking-form-container h2{
+  width: fit-content;
+  margin: auto;
+  background-color: #a53131;
+  padding: 1rem;
+  color: rgb(235, 232, 235);
+  border-radius: 30px;
+  margin-bottom: 1rem;
+}
+
+.submittted{
+  font-size: large;
+  text-align: center;
+  color: cornflowerblue;
+}
+
+.booking-type-options {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+.booking-type-options label {
+  font-size: 1.2rem;
+}
+
+.price-summary {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.booking-form-container button {
+  padding: 0.8rem 2rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 1rem;
+}
+
+.booking-form-container button:hover {
+  background-color: #45a049;
+}

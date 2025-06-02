@@ -1,0 +1,102 @@
+.room-search-table {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .room-search-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .room-search-table td {
+    border: 1px solid #ddd;
+    padding: 2px 8px;
+    text-align: center;
+  }
+  
+  .room-search-table th {
+    border: 0 !important;
+    padding: 5px !important;
+    text-align: center;
+    background-color: #0099cc;
+    color: white;
+  }
+  
+  .room-search-table input {
+    width: 80%;
+    margin-top: 5px;
+  }
+  
+  .room-search-table button {
+    background-color: #fca800;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin: 8px 10px;
+  }
+
+  .room-search-table button:hover {
+    background-color: #cc8801;
+}
+
+/* Modal overlay */
+/* Modal overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+  
+/* Modal content */
+.modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 30%;
+    position: relative;  /* Make the modal content a positioning context */
+}
+  
+/* Close button */
+.close-modal {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    color: black;  /* Set the color to black */
+    cursor: pointer;
+}
+  
+/* Payment Confirmation */
+.payment-confirmation {
+    padding: 20px;
+    background-color: #dff0d8;
+    border-radius: 5px;
+    color: #3c763d;
+    text-align: center;
+    margin-top: 20px;
+}
+.search-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-filters input {
+  flex: 1;
+  min-width: 150px;
+}

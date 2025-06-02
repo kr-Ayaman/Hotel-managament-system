@@ -1,0 +1,36 @@
+.guests-container {
+    margin-top: 4.5rem;
+    padding: 2rem;
+  }
+  
+  .guests-container .section {
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .guests-container .section-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    background-color: #1a0e60;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .guests-container .toggle-icon {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .guests-container .section-content {
+    padding: 1rem;
+    background-color: #fff;
+  }
+  

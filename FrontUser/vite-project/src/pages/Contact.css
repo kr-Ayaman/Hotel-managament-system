@@ -1,0 +1,111 @@
+.get-in{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    padding: 250px;
+    background-color: #5D62DC;
+    color: white;
+}
+.get-in h1{
+    align-self: center;
+    margin-top: 55px;
+}
+.get-in-touch{
+    display: flex;
+    justify-content: space-between;
+}
+.get-in-touch img{
+    height: 70px;
+    transition: all 0.3s;
+}
+.get-in-touch img:hover{
+    transform: scale(1.1);
+}
+.text-in-bw{
+    display: flex;  
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+}
+.Contact p{
+    font-family: system-ui;
+    font-weight: 100;
+}
+.message-us-section {
+    margin: 50px;
+    text-align: center;
+  }
+  
+.form-section{
+    margin: 50px auto;
+    text-align: center;
+}
+  .message-us-section h1 {
+    font-size: 2em;
+    color: #0084A3;
+  }
+  
+  .message-us-section p {
+    color: #1a1a1a;
+    font-size: 1em;
+  }
+  
+  .form-section {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .form-row > div {
+    flex: 1;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+  }
+  
+  textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  .submit-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 40px;
+    background-color: #d2eff1; /* Light background color for disabled state */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: not-allowed;
+    transition: background-color 0.4s ease, transform 0.2s ease; /* Transition for background and click effect */
+  }
+  
+  .submit-button:enabled {
+    background-color: #5ed4ce; /* Mid background color for enabled state */
+    cursor: pointer;
+  }
+  
+  .submit-button:enabled:hover {
+    background-color: #50b0b5; /* Darker color on hover */
+  }
+  
+  .submit-button:enabled:active {
+    transform: scale(0.98); /* Slight scale down on click */
+  }
+  

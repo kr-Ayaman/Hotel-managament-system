@@ -1,0 +1,45 @@
+.banquet-search-table {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  td {
+    border: 1px solid #ddd;
+    padding: 2px 8px;
+    text-align: center;
+  }
+  
+  th {
+    border: 1px solid #ddd;
+    padding: 10px 8px;
+    text-align: center;
+    background-color: #0099cc;
+    color: white;
+  }
+  
+  input {
+    width: 80%;
+    margin-top: 5px;
+  }
+  
+  button {
+    background-color: #fca800;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin: 8px 10px;
+  }
+
+  button:hover {
+    background-color: #cc8801;
+}
+  

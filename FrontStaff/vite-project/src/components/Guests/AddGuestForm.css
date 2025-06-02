@@ -1,0 +1,93 @@
+.add-guest-container {
+  max-width: 90%;
+  margin: 1rem auto;
+  border-radius: 15px;
+  color: #ffffff;
+
+}
+/* Header for the form */
+.add-guest-header {
+  display: flex;
+  align-items: center;
+  background-color: #1a2e4b;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.add-guest-header h2 {
+  margin: 0;
+  margin-left: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.add-guest-header img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Form layout */
+.add-guest-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+  margin: 0 auto;
+}
+
+/* Labels for input fields */
+.add-guest-form label {
+  font-weight: 500;
+  font-size: 14px;
+  color: #0b1642;
+}
+
+/* Input fields */
+.add-guest-form input,
+.add-guest-form textarea {
+  margin-top: 8px;
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Prevent resizing for textarea */
+.add-guest-form textarea {
+  resize: none;
+}
+
+/* Focus styling for input fields */
+.add-guest-form input:focus,
+.add-guest-form textarea:focus {
+  border-color: #ffcc00;
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 204, 0, 0.5);
+}
+
+/* Submit button */
+.add-guest-form .submit-button {
+  background-color: #fca800;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 40%;
+}
+
+.add-guest-form .submit-button:hover {
+  background-color: #cc8801;
+}
+
+.add-guest-form .submit-button:active {
+  background-color: #cca300;
+  transform: scale(0.98);
+}

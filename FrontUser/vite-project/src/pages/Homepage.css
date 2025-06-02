@@ -1,0 +1,12 @@
+.Homepage h1{
+ color: #8AB149;
+ margin-left: 20px;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    padding: 20px;
+    flex-wrap: nowrap; 
+  }

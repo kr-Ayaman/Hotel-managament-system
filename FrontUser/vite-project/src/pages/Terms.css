@@ -1,0 +1,41 @@
+.terms-container {
+    background-color: #4b2e83; /* Purple background color */
+    color: #f0d269; /* Gold text color */
+    padding: 40px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .terms-logo {
+    width: 200px;
+    display: block;
+    margin: 0 auto 20px;
+  }
+  
+  .terms-intro {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #ffffff;
+  }
+  
+  .terms-section {
+    margin-bottom: 20px;
+  }
+  
+  .terms-section h3 {
+    font-size: 18px;
+    color: #d8e1e8; 
+    margin-bottom: 10px;
+  }
+  
+  .terms-section ul {
+    padding-left: 30px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .terms-section ul li {
+    margin-bottom: 8px;
+    color: #ffffff;
+  }
+  

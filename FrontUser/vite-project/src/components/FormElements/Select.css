@@ -1,0 +1,11 @@
+.form-control select {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-control--invalid select {
+    border-color: red;
+}

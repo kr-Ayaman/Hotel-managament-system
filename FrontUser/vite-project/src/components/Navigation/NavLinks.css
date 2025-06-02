@@ -1,0 +1,40 @@
+.hotel-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+}
+.main-navigation__header-nav{
+  min-width: 60%;
+}
+.main-navigation__header-nav ul {
+  min-width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+.nav-links a{
+  text-decoration: none;
+}
+.nav-links li{
+  list-style: none;
+}
+.nav-links a {
+  font-size: 16px;  
+  color: #fff;
+  font-weight: 100;
+  padding-bottom: 2px;
+}
+.nav-links .selected {
+  text-decoration: underline;
+  font-weight: 600; /* Adjust for a medium font weight if using a custom font */
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,34 @@
+.booking-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.booking-card:hover {
+  transform: translateY(-2px);
+}
+
+.details p {
+  margin: 5px 0;
+}
+
+.links button {
+  background-color: #ccc;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.links button:hover {
+  background-color: #aaa;
+}
