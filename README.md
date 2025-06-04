@@ -383,12 +383,12 @@ INSERT INTO banquet_hall (hall_id, capacity, price_per_hour) VALUES
 (10, 100, 200.50);
 
 
-INSERT INTO staff (first_name, last_name, position, email, salary, contact_number, passwords) VALUES
-('Robert', 'King', 'Manager', 'robert.king@hotel.com', 90000.00, '555-0101', 'staffpass1'),
-('Jessica', 'Jones', 'Manager', 'jessica.jones@hotel.com', 92000.00, '555-0102', 'staffpass2'),
-('Daniel', 'Chen', 'Receptionist', 'daniel.chen@hotel.com', 45000.00, '555-0103', 'staffpass3'),
-('Susan', 'Miller', 'Accountant', 'susan.miller@hotel.com', 65000.00, '555-0104', 'staffpass4'),
-('Mike', 'Davis', 'Restaurant Staff', 'mike.davis@hotel.com', 38000.00, '555-0105', 'staffpass5');
+INSERT INTO staff (staff_id, first_name, last_name, position, email, hire_date, salary, contact_number, passwords) VALUES
+(7, 'John', 'Doe', 'Manager', 'jhn.doe@example.com', '2024-11-11 22:53:10', 50000.00, '1234567890', '$2b$10$Dt6S0CchFe1xsX.iBriOy.kTdU6nvfTTEAxfdjuCp0HkL8EnLHYQe'),
+(9, 'Anil', 'Kumar', 'Manager', 'anil.kumar@hotel.com', '2024-01-15 00:00:00', 50000.00, '9123456781', 'anilpass'),
+(17, 'Deepa', 'Sinha', 'Receptionist', 'deepa.sinha@hotel.com', '2024-02-20 00:00:00', 20020.00, '9876543211', 'deepa123'),
+(20, 'Simran', 'Kaur', 'Accountant', 'simran.kaur@hotel.com', '2024-05-05 00:00:00', 25000.00, '9312345672', 'simran@123'),
+(21, 'John', 'Doe', 'Restaurant Staff', 'john.doe2@example.com', '2024-11-17 00:00:00', 25000.00, '123-456-7890', 'hashed_password');
 
 
 INSERT INTO banquet_hall_booking (guest_id, hall_id, occasion, check_in_date, check_out_date, banquet_hall_rent, total_banquet_hall_rent) VALUES
