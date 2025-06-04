@@ -1,1 +1,1 @@
-In terminal, run npm start
+In terminal, run `npm start`
