@@ -372,4 +372,29 @@ INSERT INTO services (service_name, description, services_price) VALUES
 ('Conference Room', 'Booking of a fully equipped conference room.', 5000.00),
 ('Room Cleaning', 'Daily room cleaning service.', 600.00);
 
--- Note: Add INSERT statements for the remaining tables (`banquet_hall`, `banquet_hall_booking`, `staff`, etc.) as needed.
+
+
+INSERT INTO banquet_hall (hall_id, capacity, price_per_hour) VALUES
+(1, 200, 500.00),
+(2, 300, 7000.00),
+(3, 150, 4000.00),
+(4, 250, 6000.00),
+(5, 350, 8000.00),
+(10, 100, 200.50);
+
+
+INSERT INTO staff (first_name, last_name, position, email, salary, contact_number, passwords) VALUES
+('Robert', 'King', 'Manager', 'robert.king@hotel.com', 90000.00, '555-0101', 'staffpass1'),
+('Jessica', 'Jones', 'Manager', 'jessica.jones@hotel.com', 92000.00, '555-0102', 'staffpass2'),
+('Daniel', 'Chen', 'Receptionist', 'daniel.chen@hotel.com', 45000.00, '555-0103', 'staffpass3'),
+('Susan', 'Miller', 'Accountant', 'susan.miller@hotel.com', 65000.00, '555-0104', 'staffpass4'),
+('Mike', 'Davis', 'Restaurant Staff', 'mike.davis@hotel.com', 38000.00, '555-0105', 'staffpass5');
+
+
+INSERT INTO banquet_hall_booking (guest_id, hall_id, occasion, check_in_date, check_out_date, banquet_hall_rent, total_banquet_hall_rent) VALUES
+(3, 1, 'Birthday Party', '2025-07-15', '2025-07-15', 2500.00, 2500.00),
+(5, 3, 'Corporate Meeting', '2025-08-01', '2025-08-01', 16000.00, 16000.00),
+(8, 2, 'Wedding Anniversary', '2025-08-20', '2025-08-20', 42000.00, 42000.00),
+(10, 4, 'Charity Gala', '2025-09-05', '2025-09-05', 48000.00, 48000.00),
+(1, 10, 'Small Get-together', '2025-09-10', '2025-09-10', 1002.50, 1002.50);
+-- Note: Add INSERT statements for the remaining tables as needed.
