@@ -1,6 +1,5 @@
 # Hotel Management System 🏨
 
-A comprehensive backend database system for managing the various operations of a hotel. This system is designed to handle guest information, room and banquet hall bookings, service requests, restaurant orders, payments, staff management, and guest feedback.
 
 ---
 ## ✨ Features
